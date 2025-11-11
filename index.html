@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Recrutement — Guilde Albion Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🛡️ Formulaire de Recrutement — Guilde</h1>
+            <p class="subtitle">Bienvenue aventurier ! ⚔️</p>
+            <p class="intro">Avant de rejoindre nos rangs, merci de remplir ce petit formulaire pour que nous puissions mieux te connaître.</p>
+        </header>
+
+        <form id="recruitmentForm" class="form">
+            <!-- Informations générales -->
+            <section class="form-section">
+                <h2 class="section-title">🔰 Informations générales</h2>
+                
+                <div class="form-group">
+                    <label for="pseudo">Pseudo en jeu :</label>
+                    <input type="text" id="pseudo" name="pseudo" required placeholder="Ton nom exact dans Albion Online">
+                </div>
+
+                <div class="form-group">
+                    <label for="discord">Identifiant Discord :</label>
+                    <input type="text" id="discord" name="discord" required placeholder="Exemple : Nom#1234">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="age" min="13" placeholder="Optionnel, mais utile pour la cohésion de groupe">
+                </div>
+
+                <div class="form-group">
+                    <label for="region">Région et fuseau horaire :</label>
+                    <input type="text" id="region" name="region" required placeholder="Ex : France / UTC+1, Québec / UTC-5">
+                </div>
+            </section>
+
+            <!-- Expérience de jeu -->
+            <section class="form-section">
+                <h2 class="section-title">⚒️ Expérience de jeu</h2>
+                
+                <div class="form-group">
+                    <label>Depuis combien de temps joues-tu à Albion Online ?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="experience" value="debutant" required>
+                            <span>☐ Débutant</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="experience" value="intermediaire">
+                            <span>☐ Intermédiaire</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="experience" value="experimente">
+                            <span>☐ Expérimenté</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="experience" value="veteran">
+                            <span>☐ Vétéran</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="anciennesGuildes">Es-tu déjà passé par d'autres guildes ?</label>
+                    <textarea id="anciennesGuildes" name="anciennesGuildes" rows="3" placeholder="Si oui, lesquelles et pourquoi les avoir quittées ?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Quel est ton rôle ou style de jeu préféré ?</label>
+                    <input type="text" id="role" name="role" placeholder="Ex : tank, healer, DPS, gatherer, crafter, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="ip">Ton niveau d'équipement moyen (IP) :</label>
+                    <input type="number" id="ip" name="ip" min="0" placeholder="Approximation si tu n'es pas sûr">
+                </div>
+            </section>
+
+            <!-- Activités et disponibilité -->
+            <section class="form-section">
+                <h2 class="section-title">⚔️ Activités et disponibilité</h2>
+                
+                <div class="form-group">
+                    <label>Quelles activités t'intéressent le plus ?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="activites" value="pvp">
+                            <span>☐ PvP (ZvZ, GvG, petits comités)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="activites" value="pve">
+                            <span>☐ PvE (donjons, world bosses, etc.)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="activites" value="gathering">
+                            <span>☐ Gathering / Crafting</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="activites" value="economie">
+                            <span>☐ Économie / Marché</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="activites" value="exploration">
+                            <span>☐ Exploration / Transport</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tempsJeu">Combien de temps joues-tu par semaine ?</label>
+                    <input type="text" id="tempsJeu" name="tempsJeu" placeholder="Ex : 2-3 soirs, week-ends, tous les jours, etc.">
+                </div>
+            </section>
+
+            <!-- Engagement dans la guilde -->
+            <section class="form-section">
+                <h2 class="section-title">🏰 Engagement dans la guilde</h2>
+                
+                <div class="form-group">
+                    <label for="recherche">Que recherches-tu dans une guilde ?</label>
+                    <textarea id="recherche" name="recherche" rows="3" placeholder="Ambiance, entraide, organisation, guerres, etc."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Es-tu prêt à participer aux activités de guilde (events, guerres, etc.) ?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="participation" value="oui" required>
+                            <span>☐ Oui</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="participation" value="non">
+                            <span>☐ Non</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="participation" value="selon">
+                            <span>☐ Selon mes disponibilités</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>As-tu un micro et peux-tu venir sur Discord ?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="discordMicro" value="oui" required>
+                            <span>☐ Oui</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="discordMicro" value="non">
+                            <span>☐ Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="autre">Autre chose à ajouter ?</label>
+                    <textarea id="autre" name="autre" rows="4" placeholder="Une phrase libre pour te présenter, montrer ta motivation, ton humour, etc."></textarea>
+                </div>
+            </section>
+
+            <!-- Validation -->
+            <section class="form-section">
+                <h2 class="section-title">📝 Validation</h2>
+                <div class="form-group">
+                    <label class="checkbox-label validation-checkbox">
+                        <input type="checkbox" id="validation" name="validation" required>
+                        <span>✅ En envoyant ce formulaire, tu confirmes vouloir rejoindre la guilde, et respecter nos valeurs : entraide, respect, et esprit d'équipe.</span>
+                    </label>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">⚔️ Envoyer ma candidature</button>
+            </div>
+        </form>
+
+        <div id="successMessage" class="success-message hidden">
+            <h2>🎉 Candidature envoyée !</h2>
+            <p>Merci pour ton intérêt ! Nous examinerons ta candidature et te contacterons bientôt sur Discord.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
