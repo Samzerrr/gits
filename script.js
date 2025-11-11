@@ -1,6 +1,6 @@
 // ⚙️ CONFIGURATION - Remplacez cette URL par votre webhook Discord
 // Pour créer un webhook : Paramètres du serveur > Intégrations > Webhooks > Nouveau webhook
-const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1437932552592560208/AwRcp_YAkKAhv1cXe_No4ZqLqI2QOfzQjKeWirZS42cvjEtCktN4d6b9mlo5L_VYaTpJ';
+const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1437935762535485626/uX6ytRa--HP6_CV6iLpYa8_9-8WQKNyC8gsojJ_CX-6xXJkevWS4esei6Gly1IbopREQ';
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('recruitmentForm');
